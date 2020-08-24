@@ -1,0 +1,51 @@
+{
+  "name": "youtube-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "watch": "webpack --watch",
+    "serve": "webpack-dev-server --open",
+    "build": "webpack --mode=production"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "shared"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js",
+      "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-jest": "^26.2.2",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.1.1",
+    "eslint-plugin-jest-dom": "^3.1.4",
+    "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.2.2",
+    "jest-junit": "^11.1.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "query-string": "^6.13.1"
+  }
+}
